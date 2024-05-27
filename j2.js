@@ -21,13 +21,6 @@ playerEl.textContent = player.name + ": $"+ player.chips + " "
 
 function getrandomcard(){
     let Rc = Math.floor(Math.random()*13) + 1;
-/*
-    if(Rc== 1){
-        return 11
-    }else if(Rc ==11 || Rc ==12 || Rc ==13){
-        return 10
-    }
-    return Rc*/
 
     if (Rc>10){
         return 10
@@ -90,40 +83,3 @@ function reset(){
     sumEl.textContent = "Sum: " + sum;
     cardsEl.textContent = "Cards: ";
 }
-
-
-/*
-let c=[2,3,5]
-
-for(let i=0;i<c.length;i++){
-    console.log(c[i])
-}
-
-let sen =['a','b','c','e']
-let gretEl =document.getElementById("gret")
-
-for (let i=0;i<sen.length;i++){
-    gretEl.textContent += sen[i] + " "
-}
-let p1 =102
-let p2 = 107
-
-function trt(){
-     return p1  + p2;
-
-}
-rt = trt()
-var rt 
-console.log(rt)
-
-let rv = Math.floor( Math.random()*6) + 1
-console.log(rv)
-
-let airbnb = {
-    isaval: true,
-    location: "theking",
-    price: 200,
-    tags: ["pr",1,"ww"]
-}
-
-console.log(airbnb.price)*/
